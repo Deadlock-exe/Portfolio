@@ -1,9 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/light", "destination": "/index_light.html" },
-      { "source": "/light/*", "destination": "/index_light.html" },
-      { "source": "/dark", "destination": "/index.html" },
-      { "source": "/dark/*", "destination": "/index.html" }
-    ]
-  }
-  
