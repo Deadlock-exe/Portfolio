@@ -639,6 +639,7 @@ h4 {
     padding: 75px;
     justify-content: space-around;
     align-items: center;
+    padding: 18rem 0;
 }
 
 .contact {
@@ -763,14 +764,13 @@ textarea {
 
 }
 .footer {
-    height: 22rem;
-    background-color: transparent;
+    background-color: #379683;
     color: #edf5e1;
     align-items: center;
     display: flex;
     justify-content: center;
     margin: auto;
-
+    padding: 5rem 0;
 }
 
 .things {
@@ -826,8 +826,7 @@ textarea {
 }
 
 #homebutton_footer:hover {
-    color: rgb(126, 126, 126);
-    font-size: 1.4rem;
+    color: rgb(201, 201, 201);
     text-shadow: 0px 0px 20px #000000;
 
 }
