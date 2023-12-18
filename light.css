@@ -83,6 +83,7 @@ body {
 @media screen and (max-width:400px) {
     #navbar_logo {
         margin-left: 0rem;
+        width: 100px;
     }
 }
 
