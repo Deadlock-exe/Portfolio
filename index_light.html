@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Gupta</title>
+    <link rel="shortcut icon" href="portfolio_favicon2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b81fd7f057.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="light.css">
+</head>
+
+<body class="hello" oncontextmenu="return false">
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="avatar">
+            <img src="portfolio_bitmoji2.png" alt="">
+        </div>
+        <div class="loading-bar" id="loadingBar">
+            <div class="loading-progress" id="loadingProgress">0%</div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Simulate content loading delay (replace this with your actual loading logic)
+            setTimeout(function() {
+                // Hide the loading screen
+                document.getElementById("loadingScreen").style.display = "none";
+    
+                // Show the main content
+                document.getElementById("mainContent").style.display = "block";
+            }, 3000); // Adjust the duration as needed
+        });
+        window.onload = function () {
+            var loadingProgress = document.getElementById("loadingProgress");
+            
+            function updateProgress(percent) {
+                loadingProgress.style.width = percent + "%";
+                loadingProgress.innerHTML = percent + "%";
+            }
+        
+            // Simulate content loading delay (replace this with your actual loading logic)
+            var percent = 0;
+            var interval = setInterval(function () {
+                percent += 20; // Adjust the step as needed
+                updateProgress(percent);
+        
+                if (percent >= 100) {
+                    // Hide the loading screen
+                    document.getElementById("loadingScreen").style.display = "none";
+        
+                    // Show the main content
+                    document.getElementById("mainContent").style.display = "block";
+        
+                    clearInterval(interval);
+                }
+            }, 500); // Adjust the interval as needed
+        };
+    </script>
+
+
+    <div class="main-content" id="mainContent">
+
+        
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar_everything container-fluid mx-5">
+        
+                    <img src="portfolio_logo.png" alt="" id="navbar_logo" class=" rounded-full py-1">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        
+                        <ul class="navbar-nav ms-auto mx-2">
+                            <li class="nav-item px-2">
+                                <a class="nav-link" aria-current="page" href="#" id="current">HOME</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#about_me">ABOUT ME</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#my_services">SERVICES</a>
+                            </li>
+                            <div class="navbar_portfolio mx-2">
+                                <a href="#portfolio"><button type="button" class="btn btn-outline-info text-xs"
+                                        id="portfolio_button_navbar">PORTFOLIO</button></a>
+                                <a class="nav-link" href="#Portfolio" id="portfolio_button_navbar_alt">PORTFOLIO</a>
+        
+        
+                            </div>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" id="portfolio_contact_navbar">
+                                    CONTACT ME
+                                </a>
+                                <ul class="dropdown-menu">
+        
+                                    <li><a class="dropdown-item" href="https://instagram.com/g._.adityaa" target="_blank"><i
+                                                class="fa-brands fa-instagram fa-2xl"></i></a></li>
+        
+                                    <li><a class="dropdown-item" href="https://twitter.com/G__aditya" target="_blank"><i
+                                                class="fa-brands fa-twitter fa-2xl"></i></a></li>
+        
+        
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#contact_us">MORE...</a></li>
+                                </ul>
+                            </li>
+        
+                    </div>
+        
+                    <div class="nav-item px-2 bulb">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-lightbulb fa-2xl"
+                                style="color: #05486B;"></i></a>
+                    </div>
+        
+        
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        
+            <div class="container-fluid py-5" id="homepage">
+                <div class="bgCover bg-fixed"></div>
+        
+                <div class="firstpage container pt-2">
+                    <div class="firstpage_content">
+                        <img class="portfolio_name" src="portfolio_name.png" alt="" draggable="false">
+                        <div class="portfolio_below_name container px-4">
+                            <p class="portfolio_below_name_text lead">Web development expert who creates Creative and Functional
+                                websites. Responsive, High Quality & Professional looking websites are my priorities.</p>
+                            <a href="#portfolio"><button type="button" class="btn btn-outline-info text-xs my-2"
+                                    id="homepage_button">PORTFOLIO</button></a>
+        
+                        </div>
+                    </div>
+                    <div class="firstpage_image">
+                        <img src="portfolio_devices.png" alt="" id="firstpage_image_img">
+                    </div>
+                </div>
+                <div class="arrow_div container text-center align-items-baseline">
+                    <a class="arrow" href="#about_me"><i class="fa-solid fa-angle-down fa-2xl"></i></a>
+        
+                </div>
+            </div>
+        
+            <div class="container-fluid py-5 my-5" id="about_me">
+                <div class="about_me_box container d-flex py-5">
+                    <div class="about_me_image">
+                        <img class="about_me_image_img" src="portfolio_bitmoji2.png" alt="">
+        
+                    </div>
+        
+                    <div class="about_me_content d-flex align-items-center">
+                        <div class="about_me_content_box px-3">
+                            <h2 class="about_me_content_heading display-3 pb-2">ABOUT ME</h2>
+                            <p class="about_me_content_text lead">Hey! I'm Aditya</p>
+                            <p class="about_me_content_text lead"><b>Web Developer</b> and Frontend-Dev at <b>Websmith
+                                    Nation</b>
+                                <!--                     <p class="about_me_content_text lead">Founder of <strong>SocialLane</strong></p> -->
+                            <p class="about_me_content_text lead">Driven and Dedicated, I am constantly striving to reach New
+                                Heights in all aspects of my Life. My Relentless Work Ethic and Eagerness to take on new
+                                challenges have led me to Success, and I am always seeking out the next Big Opportunity.</p>
+        
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        
+        
+            <div class="py-2 mt-5">
+                <div class="container mb-5 pb-3" id="my_services">
+                    <div class="container">
+                        <h1 class="services_heading display-2 text-center mt-5">SERVICES</h1>
+                        <p class="services_text lead text-center mx-5 px-5">Turning concepts into captivating websites: expertly
+                            designing, developing, and reviving online platforms. From innovative designs to seamless
+                            functionality,
+                            I bring your vision to life, ensuring a compelling and engaging digital presence.</p>
+                    </div>
+        
+        
+                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
+                        <div class="col">
+                            <div class="services_box card card-cover h-100 overflow-hidden  rounded-4 mx-2 ">
+                                <div class="d-flex flex-column h-100 p-5 text-shadow-1 text-center" id="services">
+                                    <h4 class="display-7 lh-1 fw-bold py-2">WEB DESIGNING</h4>
+                                    <p><i class="fa-solid fa-palette fa-xl py-1"></i></p>
+                                    <p class="services_box_text lead ">Showcase your Brand's Unique Identity and transform your
+                                        Vision into a Visually Stunning and User-Friendly website. Focusing on creating
+                                        Intuitive
+                                        Layouts, Captivating Graphics, and Seamless user experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="services_box card card-cover h-100 overflow-hidden rounded-4 mx-2 ">
+                                <div class="d-flex flex-column h-100 p-5 text-shadow-1 text-center" id="services">
+                                    <h4 class="display-7 lh-1 fw-bold py-2">WEB DEVELOPING</h4>
+                                    <p><i class="fa-solid fa-code fa-xl py-1"></i></p>
+                                    <p class="services_box_text lead ">Bring your website to life with our Comprehensive web
+                                        development expertise. Utilizing the Latest technologies to build High-Performance
+                                        websites
+                                        that deliver Exceptional user experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="services_box card card-cover h-100 overflow-hidden rounded-4 mx-2 ">
+                                <div class="d-flex flex-column h-100 p-5 text-shadow-1 text-center" id="services">
+                                    <h4 class="display-7 lh-1 fw-bold py-2">FIXING EXISTING WEBSITES</h4>
+                                    <p><i class="fa-solid fa-wrench fa-xl py-1"></i></p>
+                                    <p class="services_box_text lead ">Revamp your existing website to align perfectly with your
+                                        content and goals. If your current website isn't meeting your expectations, I can rework
+                                        it
+                                        to match your desired style and functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="my-5 py-5">
+                <div class="container-fluid py-5 pb-5 px-4" id="portfolio">
+        
+        
+                    <div class="container text-center">
+                        <h1 class="portfolio_heading display-2 pt-5">PORTFOLIO</h1>
+                        <p class="portfolio_text lead  mx-5 px-5 pb-5">Browse My Inspiring Portfolio and Past Projects:
+                            Showcasing
+                            Web Mastery in Action.</p>
+        
+                    </div>
+        
+                    <div class="projects pb-5 px-5">
+                        <div class="projects_image">
+                            <img src="sociallane.jpg" alt="">
+                        </div>
+                        <div class="projects_image">
+                            <img src="socialsync.jpg" alt="">
+                        </div>
+                        <div class="projects_image">
+                            <img src="ventureup.jpg" alt="">
+                        </div>
+                        <div class="projects_image">
+                            <img src="unityserve.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects pb-5 px-5">
+                        <div class="projects_image">
+                            <img src="wrecker.jpg" alt="">
+                        </div>
+                        <div class="projects_image">
+                            <img src="wordsmith.jpg" alt="">
+                        </div>
+                        <div class="projects_image">
+                            <img src="akshat.jpg" alt="">
+                        </div>
+                        <div class="projects_image">
+                            <img src="legalconnect.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="latest_project mb-5 py-4">
+                        <div class="latest_project_text">
+                            <div class="latest_content">
+                                <h1 class="">My Projects</h1>
+                                <p class="lead m-4">Each project is a testament to my commitment to creating visually stunning
+                                    and user-friendly websites. With a keen eye for design, I strive to craft unique and
+                                    immersive web experiences that captivate users and leave a lasting impression.</p>
+                                <h5>BROWSE ALL MY PROJECTS</h5>
+                                <a href="#"><button type="button" class="btn btn-outline-info text-xs my-2"
+                                        id="latest_button">ALL PROJECTS >></button></a>
+                            </div>
+                        </div>
+                        <div class="latest_project_image img-hover-zoom--point-zoom img-hover-room">
+                            <a href="#">
+                                <img src="Projects.png" alt="" id="latest">
+        
+                            </a>
+                        </div>
+        
+                    </div>
+                    <!-- <script>
+                        // Define an array of objects representing projects
+                        const projects = [
+                            {
+                                name: "SocialLane",
+                                description: "The website not only represents the agency online but also serves as a hub for client acquisition, portfolio showcase, content distribution, and industry expertise. It's a vital asset for success in the digital marketing space."
+                            },
+                            {
+                                name: "Wordsmith Nation",
+                                description: "The website serves as the digital gateway to their world of words, where they showcase their diverse writing services, highlight their team's expertise, and provide a platform for prospective clients to explore their capabilities"
+                            },
+                            {
+                                name: "Venture Up",
+                                description: "Venture Up provides and centralized platform where startups can connect with other like-minded individuals, mentors, and investors, helping them to expand their network and increase their chances of success."
+                            },
+                            {
+                                name: "UnityServe",
+                                description: "All-in-one campus Marketplace - Buy, Sell, Rent, Donate, and fulfill product requests Effortlessly.Built for a hackathon- Jamshack23 .Official Online Hackathon skskskskskskksksks sksksksksksksksks sksksksksksk skskskkskksk"
+                            },
+                            {
+                                name: "LegalConnect",
+                                description: "A platform where individuals seeking legal guidance can browse profiles, reviews, and credentials of a diverse range of legal professionals, making informed decisions about who to collaborate with based on their unique needs."
+                            }
+                        ];
+        
+                        // Get references to the elements
+                        const projectImages = document.querySelectorAll(".projects_image img");
+                        const latestProjectText = document.querySelector(".latest_content");
+                        const latestProjectImage = document.querySelector(".latest_project_image");
+        
+                        // Function to toggle CSS classes
+                        function toggleClasses() {
+                            // Toggle CSS classes for projects_image and latest_project
+                            projectImages.forEach((image) => {
+                                image.classList.toggle("hidden");
+                            });
+                            latestProjectText.classList.toggle("hidden");
+                        }
+        
+                        // Add click event listeners to each project image
+                        projectImages.forEach((image, index) => {
+                            image.addEventListener("click", () => {
+                                // Hide the existing latest_project image
+                                latestProjectImage.style.display = "none";
+        
+                                // Create a new image element
+                                const enlargedImage = document.createElement("img");
+                                enlargedImage.src = image.src;
+                                enlargedImage.alt = image.alt;
+        
+                                // Create a new div for the project name and description
+                                const projectInfo = document.createElement("div");
+                                projectInfo.classList.add("latest_projects_text"); // Add the class
+                                projectInfo.classList.add("mt-4"); // Add the class
+        
+                                // Populate the projectInfo div with project data
+                                projectInfo.innerHTML = `
+                                                            <h1 class="">${projects[index].name}</h1>
+                                                            <p class="lead">${projects[index].description}</p>
+                                                            <h5>BROWSE ALL MY PROJECTS</h5>
+                                                            <a href="#"><button type="button" class="btn btn-outline-info text-xs my-2" id="latest_button">ALL PROJECTS >></button></a>
+                                                        `;
+        
+                                // Create a new div to wrap projectInfo and enlargedImage
+                                const projectContainer = document.createElement("div");
+                                projectContainer.classList.add("d-flex"); // Add the class for flex display
+                                projectContainer.appendChild(projectInfo);
+        
+                                // Create a new div to wrap the projectContainer and enlargedImage
+                                const latestProjectContainer = document.createElement("div");
+                                latestProjectContainer.classList.add("d-flex"); // Add the class for flex display
+                                latestProjectContainer.appendChild(projectContainer);
+                                latestProjectContainer.appendChild(enlargedImage);
+        
+                                // Replace the content of the latest_project div with latestProjectContainer
+                                latestProjectText.innerHTML = '';
+                                latestProjectText.appendChild(latestProjectContainer);
+        
+                                // Apply the zoom effect to the enlarged image
+                                enlargedImage.classList.add("img-hover-zoom--point-zoom");
+                                enlargedImage.classList.add("img-hover-zoom");
+                                enlargedImage.classList.add("latest_projects_image");
+                                enlargedImage.classList.remove("projects_image");
+        
+                                // Toggle CSS classes
+                                toggleClasses();
+                            });
+                        });
+                    </script> -->
+                </div>
+            </div>
+        
+            <div class="outro my-5 mx-5" id="contact_us">
+                <div class="contact" id="contact">
+                    <h1 class="display-4 contact_heading">CONTACT ME</h1>
+                    <p class="contact_text">For all your web development needs and inquiries, don't hesitate to get in touch
+                        with me. Feel free to contact me at your convenience, and let's embark on a journey to transform
+                        your
+                        ideas into reality. I eagerly await the opportunity to discuss your project and collaborate on
+                        building
+                        a remarkable digital experience.</p>
+                </div>
+        
+                <div class="contact" id="details">
+                    <form action="mailto:itsadityagupta0909@gmail.com" enctype="text/plain" method="post">
+                        <div class="topbox">
+                            <div id="name">
+                                <p class="boxtype">Name</p>
+                                <input class="inputbox1 px-3" type="text" id="namebox" placeholder="YOUR NAME">
+                            </div>
+        
+        
+                            <div id="mail">
+                                <p class="boxtype">E-mail</p>
+                                <input class="inputbox1 px-3" type="email" id="mailbox" placeholder="xyz@gmail.com">
+                            </div>
+                        </div>
+        
+        
+                        <div class="bottombox">
+                            <div id="message">
+                                <p class="boxtype">Message - [Co-operation Offer]</p>
+                                <textarea class="inputbox2 px-3 py-3" type="text" id="messagebox"
+                                    placeholder="Co-operation Offer" maxlength="600">
+        
+                                </textarea>
+                                <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+                            </div>
+                        </div>
+                        <div class="send">
+                            <p id="captcha">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of
+                                Service apply.</p>
+                            <input type="submit" name="Submit" value="SEND" class="submit_button mx-2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+            <div class="footer mb-4">
+                <div class="things">
+                    <h1 class="display-3 mb-2" id="footer_heading">Aditya Gupta</h1>
+                    <div class="footer_logos pb-5">
+        
+        
+        
+                        <div class="actual_logo px-2 py-1" id="instagram">
+                            <a href="https://instagram.com/g._.adityaa" target="_blank"><i
+                                    class="fa-brands fa-instagram fa-2xl"></i></a>
+                        </div>
+        
+                        <div class="actual_logo p-1" id="twitter">
+                            <a href="https://twitter.com/G__Aditya" target="_blank"><i
+                                    class="fa-brands fa-twitter fa-2xl"></i></a>
+                        </div>
+        
+                        <div class="actual_logo pl-1 py-1" id="discord">
+                            <a href="https://discord.gg/jPY2XA66XH" target="_blank"><i
+                                    class="fa-brands fa-discord fa-2xl"></i></a>
+                        </div>
+        
+                    </div>
+        
+                    <a href="#" id="home">
+                        <p class=" px-2 py-2 " id="homebutton_footer">Home</p>
+                    </a>
+        
+        
+                </div>
+            </div>
+        
+        
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+                integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+                integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+                crossorigin="anonymous"></script>
+    </div>
+
+</body>
+
+</html>
