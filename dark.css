@@ -84,7 +84,7 @@ body {
 @media screen and (max-width:400px) {
     #navbar_logo {
         margin-left: 0rem;
-        width: 120px;
+        width: 100px;
     }
 }
 .nav-link i{
