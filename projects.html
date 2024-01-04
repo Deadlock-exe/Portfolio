@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Aditya Gupta</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="shortcut icon" href="portfolio_favicon2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b81fd7f057.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Hi I'm Aditya. Explore my portfolio to witness a blend of creativity and technical expertise, showcasing a collection of projects that bring ideas to life in the digital realm">
+        <meta property="og:image" content="https://raw.githubusercontent.com/Deadlock-exe/portfolio/main/og-image.jpg">
+        <meta property="og:title" content="Aditya Gupta">
+        <meta property="og:description" content="Hi I'm Aditya. Explore my portfolio to witness a blend of creativity and technical expertise, showcasing a collection of projects that bring ideas to life in the digital realm">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@G__aditya">
+        <meta name="twitter:title" content="Aditya Gupta">
+<meta name="twitter:description" content="Hi I'm Aditya. Explore my portfolio to witness a blend of creativity and technical expertise, showcasing a collection of projects that bring ideas to life in the digital realm">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Deadlock-exe/portfolio/main/og-image.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+<body>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="avatar">
+            <img src="portfolio_bitmoji2.png" alt="">
+        </div>
+        <div class="loading-bar" id="loadingBar">
+            <div class="loading-progress" id="loadingProgress">0%</div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Simulate content loading delay (replace this with your actual loading logic)
+            setTimeout(function() {
+                // Hide the loading screen
+                document.getElementById("loadingScreen").style.display = "none";
+    
+                // Show the main content
+                document.getElementById("mainContent").style.display = "block";
+            }, 3000); // Adjust the duration as needed
+        });
+        window.onload = function () {
+            var loadingProgress = document.getElementById("loadingProgress");
+            
+            function updateProgress(percent) {
+                loadingProgress.style.width = percent + "%";
+                loadingProgress.innerHTML = percent + "%";
+            }
+        
+            // Simulate content loading delay (replace this with your actual loading logic)
+            var percent = 0;
+            var interval = setInterval(function () {
+                percent += 20; // Adjust the step as needed
+                updateProgress(percent);
+        
+                if (percent >= 100) {
+                    // Hide the loading screen
+                    document.getElementById("loadingScreen").style.display = "none";
+        
+                    // Show the main content
+                    document.getElementById("mainContent").style.display = "block";
+        
+                    clearInterval(interval);
+                }
+            }, 500); // Adjust the interval as needed
+        };
+    </script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <div class="main-content" id="mainContent">
+
+        <div class="frontLogo">
+            <a href="https://adityagupta.site">
+                <img src="portfolio_logo2.png" alt="" id="navbar_logo" class=" rounded-full py-1">
+            </a>
+        </div>
+        <div class="front">
+            <div class="">
+                <h1>HERE'S SOME OF MY PROJECTS</h1>
+            </div>
+        </div>
+        <div class="frontArrow">
+            <div class="">
+                <a class="arrow" href="#project"><i class="fa-solid fa-angle-down fa-2xl"></i></a>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project">
+                <div class="projectFrame" data-aos="fade-up">
+                    <div class="deviceFrame">
+                        <iframe src="https://sociallane.vercel.app" frameborder="0"></iframe>
+                      </div>
+                </div>
+                <div class="projectFrame projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="sociallane.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>SocialLane</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Elevated SocialLane's online presence with a sleek and dynamic website, embodying their Social Media Marketing Agency's ethos.</p>
+                        <p>Crafted a user-friendly interface to showcase their services with style, fostering digital engagement.</p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://sociallane.vercel.app" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame" data-aos="fade-up">
+                    <div class="deviceFrame">
+                        <iframe src="https://aeriewoods.in" frameborder="0"></iframe>
+                      </div>
+                </div>
+                <div class="projectFrame projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="aeriewoods.png" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>AerieWoods</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Captured the essence of AerieWoods through a visually immersive website, inviting visitors to explore this cozy homestay haven.</p>
+                        <p>Designed an intuitive platform for seamless booking experiences, complementing the tranquil ambiance of their retreat.
+                        </p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://aeriewoods.in" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame" data-aos="fade-up">
+                    <div class="deviceFrame">
+                        <iframe src="https://deadlock-exe.github.io/AkshatGupta/" frameborder="0"></iframe>
+                      </div>
+                </div>
+                <div class="projectFrame projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="akshat.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>Personal Portfolio</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Fashioned an impactful online identity for Akshat Gupta, the Database Engineer, through a polished portfolio website.</p>
+                        <p>Integrated a clean and efficient layout to showcase his skills, projects, and expertise in the world of database engineering.</p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://deadlock-exe.github.io/AkshatGupta/" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame" data-aos="fade-up">
+                    <div class="deviceFrame">
+                        <iframe src="https://socialsync-production.vercel.app" frameborder="0"></iframe>
+                      </div>
+                </div>
+                <div class="projectFrame projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="socialsync.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>SocialSync</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Brought SocialSync's digital prowess to life with a vibrant website, reflecting their dynamic approach to digital marketing.</p>
+                        <p>Implemented an intuitive design to highlight their services, creating a digital hub for potential clients.</p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://socialsync-production.vercel.app" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame projectFramePC projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="legalconnect.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>LegalConnect</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Empowered LegalConnect's innovative vision by crafting a user-centric website connecting diverse legal services seamlessly.</p>
+                        <p>Engineered a platform that simplifies access to legal solutions, propelling their startup idea to a wider audience.</p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://legal-connect-2526.vercel.app/" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame projectFramePC projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="ventureup.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>Venture Up</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Revolutionized Unity Serve's hackathon project with a dynamic campus marketplace website.</p>
+                        <p>Engineered an efficient platform connecting students within a college campus for streamlined services and collaboration.</p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://devfolio.co/projects/venture-up-ac07" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame projectFramePC projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="unityserve.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>UnityServe</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Pioneered Venture Up's hackathon project with an integrated platform connecting founders, investors, and mentors.</p>
+                        <p>Designed a cohesive space for collaboration and growth within the startup ecosystem.
+
+                        </p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://devfolio.co/projects/unityserve-03ce" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectFrame projectFramePC projectFramePCAlt" data-aos="fade-up">
+                    <div class="deviceFramePC">
+                        <img src="wordsmith.jpg" alt="">
+                      </div>
+                </div>
+                <div class="projectContent" data-aos="fade-up">
+                    <div class="projectHeading">
+                        <h2>Wordsmith</h2>
+                    </div>
+                    <div class="projectText">
+                        <p>Transformed WordSmith Nation's online presence with a sophisticated website, mirroring their excellence in content creation. </p>
+                        <p>Crafted a platform that accentuates their proficiency in delivering top-notch content writing services.</p>
+                    </div>
+                    <div class="projectButton">
+                        <a href="https://deadlock-exe.github.io/WordsmithNation/" target="_blank"><button>Visit</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div>
+                <div class="footerImage">
+                    <img src="portfolio_logo2.png" alt="">
+                </div>
+                <div class="footerButton">
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                </div>
+                <div class="footerIcons">
+                    <div class="actual_logo" id="instagram">
+                        <a href="https://instagram.com/g._.adityaa" target="_blank"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a>
+                    </div>
+
+                    <div class="actual_logo" id="twitter">
+                        <a href="https://twitter.com/G__Aditya" target="_blank"><i
+                                class="fa-brands fa-twitter fa-2xl"></i></a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
